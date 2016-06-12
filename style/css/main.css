@@ -1,0 +1,192 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  background: url(/style/image/bgnd.jpg);
+}
+
+#lg-full {
+  display: none;
+}
+
+.canvas {
+  width: 850px;
+  min-height: 100vh;
+  margin: 0 auto;
+  box-shadow: 0 0 40px rgba(10, 10, 10, 0.6);
+  background: #487D8D;
+
+}
+.canvas-wrap {
+  width: 850px;
+  background: #ffffff;
+}
+
+.message {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 22px;
+  padding: 0 6px;
+  background: #ffffff;
+  border: 1px solid #e3d6c3;
+  border-radius: 4px;
+  line-height: 22px;
+  vertical-align: middle;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  color: #26424a;
+}
+.msg-error {
+  border: 1px solid #d8d2ca;
+  color: #cabdab;
+}
+
+.user-bar {
+  width: 850px;
+  height: 22px;
+  margin: 0 auto;
+  padding: 5px 0;
+  background: #487D8D;
+  text-align: right;
+  font-size: 0;
+}
+.ub-nav-panel {
+  display: inline-block;
+  float: left;
+}
+.ub-login-panel {
+  display: inline-block;
+  float: right;
+}
+.ub-login-panel:after {
+  clear: both;
+}
+.ub-font {
+  line-height: 22px;
+font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+.ub-button {
+  display: inline-block;
+  height: 22px;
+  padding: 0 6px;
+  background: #26424a;
+  border-radius: 4px;
+  border: none;
+  vertical-align: middle;
+  color: #ffffff;
+  cursor: pointer;
+}
+.ub-button:before {
+  display: inline-block;
+  content: "";
+  height: 100%;
+  vertical-align: middle;
+}
+.ub-text-button {
+  display: inline-block;
+  height: 22px;
+  padding: 0 6px;
+  vertical-align: middle;
+  color: #ffffff;
+  cursor: pointer;
+  
+}
+.ub-input {
+  width: 83px;
+  height: 22px;
+  padding: 0 6px;
+  background: #ffffff;
+  border: none;
+  border-radius: 4px;
+  vertical-align: middle;
+  color: #000000;
+}
+.ub-text {
+  vertical-align: middle;
+  color: #ffffff;
+}
+.ub-nav-panel .ub-button,
+.ub-nav-panel .ub-text-button,
+.ub-nav-panel .ub-input,
+.ub-nav-panel .ub-text {
+  margin: 0 0 0 5px;
+}
+.ub-login-panel .ub-button,
+.ub-login-panel .ub-text-button,
+.ub-login-panel .ub-input,
+.ub-login-panel .ub-text {
+  margin: 0 5px 0 0;
+}
+
+.logo-wrap {
+  width: 683px;
+  height: 134px;
+  margin: 21px auto 0;
+  border: 1px solid #f1f1f1;
+  border-left: none;
+  border-right: none;
+  line-height: 134px;
+  text-align: center;
+}
+.logo-text {
+  vertical-align: middle;
+font-family: 'Raleway', sans-serif;
+  font-size: 62px;
+  font-weight: 100;
+}
+
+.page-wrap {
+  width: 683px;
+  margin: 21px auto 0;
+}
+.page-title {
+  height: 26px;
+  margin: 0 auto;
+  border-bottom: 1px solid #fff1e0;
+  line-height: 22px;
+font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  color: #26424a;
+}
+
+.footer {
+  width: 850px;
+  min-height: 100px;
+  height: 100%;
+  margin: 21px auto 0;
+  padding: 13px 0 0;
+  background: #487D8D;
+}
+.ft-line {
+  width: 683px;
+  height: 0;
+  margin: 13px auto 0;
+  border-bottom: 1px solid #f1f1f1;
+}
+.ft-bar {
+  width: 816px;
+  height: 30px;
+  margin: 0 auto;
+  padding: 0 17px;
+  background: #38606b;
+  text-align: right;
+}
+.ft-bar:before {
+  display: inline-block;
+  content: "";
+  height: 100%;
+  vertical-align: middle;
+}
+.ft-bar-text {
+  display: inline-block;
+  line-height: 12px;
+  vertical-align: middle;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  color:#ffffff;
+}

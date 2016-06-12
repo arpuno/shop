@@ -1,0 +1,299 @@
+#dg-wrap,
+#dg-edit,
+#dg-remove {
+  display: none;
+}
+
+.dialog-wrap {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.5);
+  text-align: center;
+}
+.dialog-wrap:before {
+  display: inline-block;
+  content: "";
+  height: 100%;
+  vertical-align: middle;
+}
+.dg-window {
+  display: inline-block;
+  width: 477px;
+  max-height: 325px;
+  padding: 0 0 21px;
+  background: #ffffff;
+  box-shadow: 0 0 3px rgba(10, 10, 10, 1);
+  text-align: left;
+  vertical-align: middle;
+}
+.dg-control-wrap {
+  width: 464px;
+  height: 10px;
+  margin: 9px auto 0;
+  line-height: 10px;
+  text-align: right;
+}
+.dg-close {
+  display: inline-block;
+  width: 13px;
+  height: 14px;
+  background: url("../image/close.png");
+  cursor: pointer;
+}
+.dg-title {
+  width: 434px;
+  height: 26px;
+  margin: 0 auto;
+  border-bottom: 1px solid #fff1e0;
+  line-height: 22px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #38606b;
+}
+.dg-content {
+  overflow: auto;
+  width: 434px;
+  min-height: 16px;
+  max-height: 188px;
+  margin: 21px auto 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
+.dg-input-wrap {
+  margin: 14px auto 0;
+  color: ##38606b;
+}
+.dg-input-wrap:first-child {
+  margin: 0 auto;
+}
+.dg-input {
+  width: 245px;
+  height: 26px;
+  margin: 5px 0 0;
+  padding: 0 8px;
+  background: #ffffff;
+  border: 1px solid #f3f3f3;
+  border-radius: 2px;
+  font-family: 'Raleway','Roboto', sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
+.dg-input-error {
+  border-color: #ffd292;
+}
+.dg-commit-wrap {
+  width: 434px;
+  height: 22px;
+  margin: 21px auto 0;
+  line-height: 22px;
+  text-align: right;
+}
+.dg-commit-button {
+  display: inline-block;
+  height: 22px;
+  padding: 0 7px;
+  background: #487D8D;
+  border: none;
+  border-radius: 2px;
+  font-family: 'Raleway','Roboto', sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.catalog {
+  margin: 10px auto 0;
+  text-align: center;
+}
+.ct-table {
+  display: table;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-family: 'Raleway','Roboto' sans-serif;
+}
+/* высота строк */
+.ct-tr {
+  display: table-row;
+  height: 53px;
+}
+.ct-tr:first-child {
+  height: 28px;
+}
+/* ширина столбцов */
+.ct-cw-img    { width: 130px; }
+.ct-cw-data   { width: 200px; }
+.ct-cw-genre  { width: 70px;  }
+.ct-cw-cond   { width: 100px; }
+.ct-cw-price  { width: 80px;  }
+.ct-cw-amount { width: 80px;  }
+/* ячейки */
+.ct-tc {
+  display: table-cell;
+  height: 63px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #000000;
+}
+.ct-tr:first-child .ct-tc {
+  height: 28px;
+  font-size: 11px;
+  color: #797979;
+}
+/* название/исполнитель в заголовке */
+.ct-th-link {
+  color: inherit;
+  text-decoration: underline;
+  font-size: 14px;
+}
+.ct-tr:first-child .ct-tc.ct-cw-data {
+  text-align: left;
+}
+/* изображение и иконки */
+.ct-tr:not(:first-child) .ct-tc.ct-cw-img {
+  white-space: nowrap;
+  font-size: 0;
+}
+.ct-img {
+  vertical-align: middle;
+}
+.ct-control-wrap {
+  display: none;
+  width: 77px;
+  height: 53px;
+  margin: 0 0 0 -77px;
+  line-height: 53px;
+  text-align: right;
+  vertical-align: middle;
+  font-size: 0;
+}
+.ct-tr:hover .ct-control-wrap {
+  display: inline-block;
+}
+.ct-control-button {
+  display: inline-block;
+  width: 13px;
+  height: 14px;
+  margin: 0 0 0 3px;
+  vertical-align: bottom;
+  cursor: pointer;
+}
+.ct-edit {
+  background: url("../image/edit.png");
+}
+.ct-remove {
+  background: url("../image/remove.png");
+}
+/* название/исполнитель */
+.ct-tr:not(:first-child) .ct-tc.ct-cw-title {
+  text-align: left;
+}
+.ct-title-wrap {
+}
+.ct-title {
+  line-height: 14px;
+  font-size: 18px;
+  font-family: 'Raleway','Roboto', sans-serif;
+  font-weight: 400;
+  color: #26424a;
+}
+.ct-artist-wrap {
+  margin: 0.5em auto 0;
+  font-family: 'Raleway','Roboto', sans-serif;
+  font-size: 11px;
+  color: #cccccc;
+}
+.ct-artist {
+  font-family: 'Raleway','Roboto', sans-serif;
+  font-size: 12px;
+  color: #000000;
+}
+/* цена и количество */
+.ct-tr:not(:first-child) .ct-tc.ct-cw-price {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: #152529;
+}
+.ct-tr:not(:first-child) .ct-tc.ct-cw-amount {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+/* нет в наличии (:not(:first-child) повышает приоритет) */
+.ct-tr:not(:first-child).ct-outofstock .ct-cw-genre,
+.ct-tr:not(:first-child).ct-outofstock .ct-cw-cond {
+  color: #cccccc;
+}
+.ct-tr:not(:first-child).ct-outofstock .ct-cw-amount {
+  font-family: 'Raleway','Roboto', sans-serif;
+  font-size: 12px;
+  color: #cccccc;
+}
+.ct-tr:not(:first-child).ct-outofstock .ct-cw-price {
+  color: #cccccc;
+  text-decoration: line-through;
+}
+/* удалённый */
+.ct-tr:not(:first-child).ct-deleted .ct-title,
+.ct-tr:not(:first-child).ct-deleted .ct-artist,
+.ct-tr:not(:first-child).ct-deleted .ct-year,
+.ct-tr:not(:first-child).ct-deleted .ct-cw-genre,
+.ct-tr:not(:first-child).ct-deleted .ct-cw-cond,
+.ct-tr:not(:first-child).ct-deleted .ct-cw-price,
+.ct-tr:not(:first-child).ct-deleted .ct-cw-amount {
+  color: #cccccc;
+}
+.ct-tr:not(:first-child).ct-deleted .ct-control-wrap {
+  display: none;
+}
+.ct-tr:not(:first-child).ct-deleted {
+  opacity: 0.5;
+}
+/* нет товаров */
+.ct-noitems-wrap {
+  height: 53px;
+  line-height: 53px;
+  text-align: center;
+  vertical-align: middle;
+}
+.ct-noitems-text {
+  padding: 4px;
+  background: #fff6eb;
+  border-radius: 2px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: #5c9aab;
+}
+
+/* навигация */
+.ct-nav-panel {
+  width: 683px;
+  margin: 15px auto 0;
+  text-align: right;
+  vertical-align: middle;
+}
+.ct-np-link {
+  font-family: 'Raleway','Roboto', sans-serif;
+  font-size: 12px;
+  color: #797979;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.ct-np-link:first-child, .ct-np-link:last-child {
+  text-decoration: none;
+}
+.ct-np-link-active {
+  color: #797979;
+}
+.ct-np-text-button {
+  margin: 0 0 0 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
+  color: #797979;
+  text-decoration: underline;
+  cursor: pointer;
+}

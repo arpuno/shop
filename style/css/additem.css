@@ -1,0 +1,48 @@
+.add-item {
+  width: 43px;
+  margin: 21px 0 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
+.ai-input-wrap {
+  margin: 12px auto 0;
+  color: #111111;
+}
+.ai-input-wrap:first-child {
+  margin: 0 auto;
+}
+.ai-input {
+  width: 245px;
+  height: 26px;
+  margin: 5px 0 0;
+  padding: 0 8px;
+  background: #ffffff;
+  border: 1px solid #f3f3f3;
+  border-radius: 2px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: #000000;
+}
+.ai-input-error {
+  border-color: #38606b;
+}
+.ai-commit-wrap {
+  width: 263px;
+  height: 22px;
+  margin: 21px 0 0;
+  line-height: 22px;
+  text-align: right;
+}
+.ai-commit-button {
+  display: inline-block;
+  height: 25px;
+  padding: 0 7px;
+  background: #38606b;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  cursor: pointer;
+}
