@@ -40,7 +40,7 @@
     <script src="<?= $v; ?>"></script>
 <?php } ?>
 
-<?php if ($MSG): /* вывод сообщений */ ?>
+<?php if ($MSG): /* вывод сообщений  I'm trying*/ ?>
     <script>$(function() { showMessage('<?= $MSG[0]; ?>', <?= $MSG[1]; ?>); });</script>
 <?php endif; ?>
   </head>
